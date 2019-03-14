@@ -287,8 +287,6 @@ section#recs img {
 
 /* RANDO CLASSES */
 
-
-
 	.pattern {
 		background: url(@images/pattern.jpg) repeat center center;
 	}
@@ -302,12 +300,12 @@ section#recs img {
 	@media (min-width: 100px) and (max-width: 1000px) {
 
 	body {	
-		border: none: 0;
+		border: none 0;
 	}
 
 	.block { text-align: left; }
 
-	.intro { text-align: center; }
+	.intro { text-align: left; }
 
 	section {
 		padding: 4vh 0;
@@ -323,7 +321,7 @@ section#recs img {
 
 	section.work figure img { 
 		margin: 0 auto 8vw;
-		width: 92vw; 
+		width: 100%; 
 		-webkit-box-shadow: 0 10px 6px -6px #444;
 	   	-moz-box-shadow: 	0 10px 6px -6px #444;
 	    box-shadow: 		0 10px 6px -6px #444;
