@@ -328,6 +328,7 @@ section#recs img {
 	 }
 
 	section#recs ul {
+		display: block;
 		margin: 0 3vw;
 	}
 
