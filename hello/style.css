@@ -301,7 +301,10 @@ section#recs img {
 
 	@media (min-width: 100px) and (max-width: 1000px) {
 
-	
+	body {	
+		border: none: 0;
+	}
+
 	.block { text-align: left; }
 
 	.intro { text-align: center; }
