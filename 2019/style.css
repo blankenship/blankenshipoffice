@@ -1,0 +1,358 @@
+/* 
+
+Styles:		joshuablankenship.com/hello
+
+version: 	1.0 — 05/29/18 Update
+author: 	Joshua Blankenship
+email: 		joshua@joshuablankenship.com
+website: 	http://blankenshipoffice.com
+          
+
+/* FOUNDATION */
+
+	*, html, body, div, span, object, iframe,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, samp,
+	small, strike, strong, sub, sup, tt, var,
+	dl, dt, dd, ol, ul, li, img, figure, figcaption,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td {
+		-moz-box-sizing: border-box; 
+		-webkit-box-sizing: border-box; 
+		box-sizing: border-box;
+		-webkit-font-smoothing: antialiased; 
+		font-smoothing: antialiased;
+		margin: 0;
+		padding: 0;
+		outline: none;
+		}
+
+	@keyframes hello {
+		from { opacity: 0; }
+		to   { opacity: 1; }
+	}
+
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+	html {
+    	font-size: 16px;
+	}
+
+	@media(min-width:700px) {
+	    html {
+	        font-size: 16px
+	    }
+	}
+
+	@media(min-width:1200px) {
+	    html {
+	        font-size: 17px
+	    }
+	}
+
+	@media(min-width:1400px) {
+	    html {
+	        font-size: 18px
+	    }
+	}
+
+	body {
+		border: 40px solid #403f3b;
+		line-height: 1.5;
+		overflow-x: hidden;
+	}
+
+	.cut { display: none; }
+
+/* TYPOGRAPHY */
+
+	h1 {
+		color: #ff5b00;
+		font: 300 15rem/5rem "bee", sans-serif;
+		margin: 2rem auto 4rem;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	h2 {
+		color: #fff;
+		font: 300 10rem/7.5rem "bee", sans-serif;
+		margin: 2.5rem 0;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.whiteout h2 {
+		color: #333;
+		text-align: left;
+	}
+
+	h3 {
+		color: #333;
+		font: 300 15rem/5rem "bee", sans-serif;
+		margin: 6rem auto 4rem;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	p, li {
+		font: 400 1.1rem/1.65rem "merriweather", sans-serif;
+		margin: 0 auto 1.65rem;
+	}
+
+	p a { 
+		color: #ff5b00;
+	}
+
+	.block { 
+		text-align: justify; 
+	}
+
+	ul { 
+		list-style-type: none; 
+	}
+
+	ul li { 
+		padding-top: 1rem;
+	}
+
+	ul li a { 
+		color: #ff5b00; 
+	}
+
+/* CONTAINERS */
+
+	header {
+		background: url(@images/pattern.jpg) repeat center center;
+		background: #ff5b00;
+	    min-height: 150px;
+		position: relative;
+		-webkit-clip-path: 	polygon(0 0, 100% 0, 100% 65%, 0 100%);
+	  	clip-path: 			polygon(0 0, 100% 0, 100% 65%, 0 100%);
+	  	z-index: 0;
+  	}
+
+  	footer {
+  		padding: 3rem 0 4rem;
+	   }
+
+	section {
+		padding: 1rem 0;
+	}
+
+	.content {
+		margin: 0 auto;
+    	max-width: 38rem;
+	}
+
+	#headshot {
+		border-radius: 150px;
+		position: relative;
+		margin: -125px auto 50px;
+		width: 300px;
+	  	z-index: 1;
+	}
+
+/* SECTION -- WORK */
+
+	section.work figure {
+		margin: 0 1%;
+	}
+
+	section.work figure img { 
+		margin: 1%;
+		width: 31%; 
+		-webkit-box-shadow: 0 20px 10px -10px #444;
+	   	-moz-box-shadow: 	0 20px 10px -10px #444;
+	    box-shadow: 		0 20px 10px -10px #444;
+	 }
+
+	.sans {
+		font: 400 1rem/1.65rem sans-serif;
+		margin: 0 auto 1.65rem;
+	}
+
+	#resume em { 
+		color: #aaa;
+		display: block; 
+	}
+
+	footer .social {
+		margin: 0 auto 1rem;
+	}
+
+	footer .social a {
+		font-size: 150%;
+		margin: 0 10px;
+	}
+
+	.social a:hover { color: #333; }
+
+	
+/* SECTION -- RECOMMENDATIONS */
+
+section#recs {
+	padding-bottom: 5rem;
+}
+
+section#recs ul {
+	display: grid;
+	grid-gap: 6vw;
+	grid-template-columns: 26vw 26vw 26vw;
+	margin: 0 auto;
+	padding: 0 calc(5vw - 40px);
+}
+
+section#recs li { 
+	background: #fff;	
+	border-top: none 0;
+	border-radius: 10px;
+	display: inline;
+	text-align: center;
+	padding: 0;
+	width: 100%;
+	-webkit-box-shadow: 0 20px 10px -10px #444;
+   	-moz-box-shadow: 	0 20px 10px -10px #444;
+    box-shadow: 		0 20px 10px -10px #444;
+}
+
+section#recs li p  {
+	color: #aaa;
+	font: 700 .75rem/.75rem "merriweather", serif;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+}
+
+section#recs li p a {
+	color: #aaa;
+}
+
+section#recs p strong {
+	color: #ff5b00;	
+	font: 400 6rem/3rem "bee", sans-serif;
+	text-transform: uppercase;
+}
+
+section#recs blockquote {
+	padding: 0 2rem 3rem;
+}
+
+section#recs blockquote quote span {
+	position: absolute;
+	top: 54px;
+	left: 0;
+	font-size: 100px;
+	line-height: 1;
+	font-weight: bold;
+	color: #c142a0
+}
+
+section#recs blockquote quote span:last-of-type {
+	left: auto;
+	right: 0
+}
+
+section#recs blockquote quote {
+	font: 300 1.1rem/1.65rem "merriweather", sans-serif;
+	font-style: italic;
+}
+
+section#recs blockquote p:before {
+		content: "";
+		padding-top: 0;
+	}
+
+section#recs figure {
+	background: #333;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	margin-bottom: 2rem;
+	padding: 2rem 1rem 1rem;
+	width: 100%;
+}
+
+section#recs img {
+	border: 10px solid rgba(255,255,255,.15);
+	border-radius: 10rem;
+	margin: 0 auto 1rem;
+	width: 10rem;
+   	}
+
+/* RANDO CLASSES */
+
+
+
+	.pattern {
+		background: url(@images/pattern.jpg) repeat center center;
+	}
+
+	.center { 
+		text-align: center; 
+	}
+
+/* WEE SCREENS */
+
+	@media (min-width: 100px) and (max-width: 1000px) {
+
+	
+	.block { text-align: left; }
+
+	.intro { text-align: center; }
+
+	section {
+		padding: 4vh 0;
+	}
+
+	.content {
+    	max-width: 90vw;
+	}
+
+	section.work figure {
+		margin: 0 4vw;
+	}
+
+	section.work figure img { 
+		margin: 0 auto 8vw;
+		width: 92vw; 
+		-webkit-box-shadow: 0 10px 6px -6px #444;
+	   	-moz-box-shadow: 	0 10px 6px -6px #444;
+	    box-shadow: 		0 10px 6px -6px #444;
+	 }
+
+	section#recs ul {
+		margin: 0 3vw;
+	}
+
+	section#recs li { 
+		display: block;
+		float: none;
+		margin: 0 auto 3rem;
+		width: 80vw; 
+		-webkit-box-shadow: 0 10px 6px -6px #444;
+	   	-moz-box-shadow: 	0 10px 6px -6px #444;
+	    box-shadow: 		0 10px 6px -6px #444;
+	}
+
+	section#recs blockquote {
+		padding: 0 2rem 2.5rem;
+	}
+
+	section#recs img {
+		border: 10px solid rgba(255,255,255,.5);
+		border-radius: 14rem;
+		margin: 0 auto 1rem;
+		width: 14rem;
+	   	}
+
+	.noshow { display: none; }
+
+} 
+
+/* END SMALL SCREENS */
