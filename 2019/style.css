@@ -1,8 +1,8 @@
 /* 
 
-Styles:		joshuablankenship.com/hello
+Styles:		blankenshipoffice.com/hello
 
-version: 	1.0 — 05/29/18 Update
+version: 	1.0 — 03/14/19 Update
 author: 	Joshua Blankenship
 email: 		joshua@joshuablankenship.com
 website: 	http://blankenshipoffice.com
@@ -70,7 +70,7 @@ website: 	http://blankenshipoffice.com
 /* TYPOGRAPHY */
 
 	h1 {
-		color: #ff5b00;
+		color: goldenrod;
 		font: 300 15rem/5rem "bee", sans-serif;
 		margin: 2rem auto 4rem;
 		text-align: center;
@@ -104,7 +104,7 @@ website: 	http://blankenshipoffice.com
 	}
 
 	p a { 
-		color: #ff5b00;
+		color: goldenrod;
 	}
 
 	.block { 
@@ -120,14 +120,14 @@ website: 	http://blankenshipoffice.com
 	}
 
 	ul li a { 
-		color: #ff5b00; 
+		color: goldenrod; 
 	}
 
 /* CONTAINERS */
 
 	header {
 		background: url(@images/pattern.jpg) repeat center center;
-		background: #ff5b00;
+		background: goldenrod;
 	    min-height: 150px;
 		position: relative;
 		-webkit-clip-path: 	polygon(0 0, 100% 0, 100% 65%, 0 100%);
@@ -231,7 +231,7 @@ section#recs li p a {
 }
 
 section#recs p strong {
-	color: #ff5b00;	
+	color: goldenrod;	
 	font: 400 6rem/3rem "bee", sans-serif;
 	text-transform: uppercase;
 }
